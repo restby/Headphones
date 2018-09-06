@@ -29,7 +29,7 @@ body {
   min-width: 1795px;
   margin: 0 auto;
   padding: 0;
-  padding-left: 126px;
+  box-sizing: border-box;
   color: #ffffff;
   position: relative;
 }
@@ -37,10 +37,10 @@ a {
   text-decoration: none;
   color: #92979a;
 }
-/*img {
+img {
   max-width: 100%;
   height: auto;
-}*/
+}
 
 .page-header {
   position: absolute;
@@ -49,10 +49,9 @@ a {
   z-index: 1;
 }
 .navigation {
+  box-sizing: border-box;
   display: flex;
   align-items: flex-start;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 .navigation__list {
   margin: 0;
@@ -63,11 +62,15 @@ a {
   flex-wrap: wrap;
   background-color: transparent;
 }
-.navigation__item {
+.navigation__item--1,
+.navigation__item--2 {
   margin-right: 28px;
 }
 .navigation__item--3 {
-  margin-right: 54px;
+  margin-right: 40px;
+}
+.hide-menu {
+  margin-left: auto;
 }
 .main {
   position: relative;
@@ -149,26 +152,17 @@ a {
   margin-right: 60px;
 }
 .page-footer {
-/*  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;*/
   background-color: #cac0b3;
-
 }
 .social {
   display: flex;
-  padding-top: 56px;
+  align-items: flex-start;
  }
 .social__slogan {
   font-size: 18px;
   font-weight: 500;
   line-height: 18px;
   color: #ffffff;
-  margin-left: auto;
-  margin-right: 95px;
-  margin-bottom: 52px;
-  /*transform: rotate(90deg);*/
 }
 .social__list {
   margin: 0;
@@ -176,7 +170,7 @@ a {
   padding-top: 2px;
   list-style: none;
   display: flex;
-  margin-right: 39px;
+  align-items: flex-start;
 }
 .social__item {
 
